@@ -22,7 +22,7 @@ services:
         - jenkins
         networks:
         - docker_network
-        command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/slave-agent.jnlp -secret 350a7ab7b8f9b69a045e3fab78d18c23e515dd69e8703f4eb97b3d5068667d5b -workDir "/home/"
+        command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/slave-agent.jnlp -secret e48d0710e007f809c3bc1fca0ac809da75884ee5e28c8b1d85c3a2893ce4c401 -workDir "/home/"
     
     artifactory:
         image: docker.bintray.io/jfrog/artifactory-oss:latest
